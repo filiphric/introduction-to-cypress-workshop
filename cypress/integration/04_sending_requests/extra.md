@@ -1,3 +1,3 @@
 ## Extra reading
-* [examples and explanations of parent and child commands](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Subject-Management)
-* [my blog on the topic of testing list of items](https://filiphric.com/testing-lists-of-items)
+* [docs for .request() command](https://docs.cypress.io/api/commands/request.html#Syntax)
+* [article about using API over GUI in your tests](https://code.kiwi.com/skip-the-ui-using-api-calls-d358b9b61b91)

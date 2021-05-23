@@ -1,14 +1,22 @@
-beforeEach(() => {
+beforeEach( () => {
 
   cy
-    .visit('/board/23312666956')
+    .visit('/board/25619573353')
 
 })
 
-it('Chaining commands', () => {
+it('creating a task', () => {
 
-  cy
-    .get('[data-cy=task]')
-    .should('be.visible')
+})
 
-});
+it('asserting number of tasks', () => {
+
+})
+
+it('asserting checking a task', () => {
+
+})
+
+it('asserting list name', () => {
+
+})

@@ -1,14 +1,10 @@
-beforeEach(() => {
+it('creating new board', () => {
 
   cy
-    .visit('/board/23312666956')
+    .visit('/');
+
+  cy
+    .get('[data-cy=board-item]')
+    .should('have.length', 1)
 
 })
-
-it('Chaining commands', () => {
-
-  cy
-    .get('[data-cy=task]')
-    .should('be.visible')
-
-});
