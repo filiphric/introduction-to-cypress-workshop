@@ -14,8 +14,8 @@ it('creating a list using api', () => {
 
 })
 
-// #2: create a task using cy.request() command. watch out! there are some required attributes
-it('creating a task using api', () => {
+// #2: create a card using cy.request() command. watch out! there are some required attributes
+it('creating a card using api', () => {
 
   cy
     .visit() // ⚠️ add ID of your board

@@ -1,30 +1,22 @@
 beforeEach(() => {
 
   cy
-    .request('POST', '/reset')
+    .request('POST', '/api/reset')
 
 });
 
-it('creating board, list and tasks', () => {
+it('creating board, list and card', () => {
 
   cy
     .visit('/')
 
   cy
-    .get('[data-cy=create-board]')
-    .click();
-
-  cy
-    .get('[data-cy=new-board-input]')
+    .get('[data-cy=first-board]')
     .type('new board{enter}');
 
   cy
     .url()
     .should('contain', '/board/')
-
-  cy
-    .get('[data-cy=add-list]')
-    .click()
 
   cy
     .get('[data-cy=add-list-input]')
@@ -35,15 +27,15 @@ it('creating board, list and tasks', () => {
     .should('be.visible')
 
   cy
-    .get('[data-cy=new-task]')
+    .get('[data-cy=new-card]')
     .click()
 
   cy
-    .get('[data-cy=task-input]')
+    .get('[data-cy=new-card-input]')
     .type('buy milk{enter}')
 
   cy
-    .get('[data-cy=task]')
-    .should('have.length', 1)
+    .get('[data-cy=card]')
+    .should('have.length', 2)
 
 })

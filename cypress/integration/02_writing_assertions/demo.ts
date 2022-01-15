@@ -5,15 +5,15 @@ beforeEach( () => {
 
 })
 
-it('creating a task', () => {
+it('creating a card', () => {
 
 })
 
-it('asserting number of tasks', () => {
+it('asserting number of cards', () => {
 
 })
 
-it('asserting checking a task', () => {
+it('asserting checking a card', () => {
 
 })
 

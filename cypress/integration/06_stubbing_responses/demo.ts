@@ -16,10 +16,10 @@ it('error message when creating a board', () => {
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
+    .type('new garden')
 
   cy
-    .contains('Save')
+    .contains('Create board')
     .click()
 
 })

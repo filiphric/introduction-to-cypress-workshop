@@ -1,10 +1,10 @@
 beforeEach(() => {
 
   cy
-    .visit('/');
+    .request('POST', '/api/reset')
 
   cy
-    .request('POST', '/api/reset')
+    .visit('/');
 
 });
 
@@ -19,9 +19,11 @@ it('creating new board', () => {
       method: 'POST',
       url: '/api/boards',
       body: {
-        name: 'board vytvoreny cez api'
+        name: 'board created api'
       }
     })
+
+  cy.reload()
 
   cy
     .get('[data-cy=board-item]')

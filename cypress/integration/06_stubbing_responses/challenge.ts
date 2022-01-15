@@ -7,7 +7,7 @@ it('list of two boards from fixture', () => {
 
 })
 
-it('empty board lise', () => {
+it('empty board list', () => {
 
   cy
     .visit('/');
@@ -16,7 +16,7 @@ it('empty board lise', () => {
 
 })
 
-it('error when creating a new task', () => {
+it('error when creating a new card', () => {
 
   cy
     .visit('/');

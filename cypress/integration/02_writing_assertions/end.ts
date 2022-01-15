@@ -5,55 +5,51 @@ beforeEach( () => {
 
 })
 
-it('creating a task', () => {
+it('creating a card', () => {
 
   cy
-    .contains('Add new task')
+    .get('[data-cy="new-card"]')
     .click();
 
   cy
-    .get('[data-cy=task-input]')
+    .get('[data-cy=new-card-input]')
     .type('buy milk{enter}')
 
   cy
-    .get('[data-cy=task]')
+    .get('[data-cy=card]')
     .should('be.visible')
 
 })
 
-it('asserting number of tasks', () => {
+it('asserting number of cards', () => {
 
   cy
-    .contains('Add new task')
+    .get('[data-cy="new-card"]')
     .click();
 
   cy
-    .get('[data-cy=task-input]')
+    .get('[data-cy=new-card-input]')
     .type('wash dishes{enter}')
 
   cy
-    .get('[data-cy=task]')
+    .get('[data-cy=card]')
     .should('have.length', 2)
 
 })
 
-it('asserting checking a task', () => {
+it('asserting checking a card', () => {
 
   cy
-    .get('[data-cy=task-done]')
+    .get('[data-cy=card-checkbox]')
     .check()
 
   cy
-    .get('[data-cy=task-title]')
-    .should('have.class', 'completed')
-
-  cy
-    .get('[data-cy=task-done]')
+    .get('[data-cy=card-checkbox]')
     .should('be.checked')
 
 })
 
-it('asserting list name', () => {
+it.only('asserting list name', () => {
 
   cy
     .get('[data-cy=list-name]')

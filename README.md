@@ -20,7 +20,7 @@ IMPORTANT: please don’t update any of the packages inside the project, version
 
 - user should be able to open Cypress GUI mode either by one of these commands:
     - `npx cypress open`
-    - `npm cy:open`
+    - `npm run cy:open`
     - `$(npm bin)/cypress open`
     - `./node_modules/.bin/cypress open`
 - IMPORTANT! Cypress process requires separate terminal process, so during workshop, participants will run application in one terminal, and cypress in another

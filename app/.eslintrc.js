@@ -1,48 +1,29 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
-    es2020: true,
+    es2021: true,
+    node: true
   },
-  extends: 'eslint:recommended',
+  extends: [
+    'plugin:vue/vue3-recommended',
+    'plugin:cypress/recommended',
+    'plugin:tailwind/recommended'
+  ],
   parserOptions: {
-    ecmaVersion: 11,
+    ecmaVersion: 12,
+    parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
-  plugins: [
-    'vue',
-  ],
+  plugins: ['vue', '@typescript-eslint', 'cypress', 'no-only-tests', 'tailwindcss'],
   rules: {
-    'comma-spacing': ['error', { before: false, after: true }],
-    'space-infix-ops': 'error',
-    'key-spacing': ['error', { afterColon: true }],
-    'arrow-spacing': ['error', { before: true, after: true }],
-    indent: [
-      'error',
-      2,
-    ],
-    'linebreak-style': [
-      'error',
-      'unix',
-    ],
-    quotes: [
-      'error',
-      'single',
-    ],
-    semi: [
-      'error',
-      'always',
-    ],
-    'no-multiple-empty-lines': [
-      'error', {
-        max: 1,
-        maxEOF: 1,
-      },
-    ],
-    'padding-line-between-statements': [
-      'error', { blankLine: 'always', prev: 'multiline-block-like', next: 'multiline-block-like' },
-    ],
-    'no-console': 'off',
-    'no-undef': 'off'
-  },
+    'brace-style': ['error', 'stroustrup'],
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    'cypress/no-pause': 'error',
+    'no-only-tests/no-only-tests': 'error',
+    'quotes': ['error', 'single'],
+    'vue/multi-word-component-names': 'off',
+    'tailwindcss/classnames-order': 'error',
+    'tailwindcss/no-contradicting-classname': 'error'
+  }
 };

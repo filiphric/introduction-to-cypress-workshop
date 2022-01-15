@@ -1,0 +1,34 @@
+{
+  "boards": [
+    {
+      "name": "new board",
+      "user": 0,
+      "id": 22526033962,
+      "starred": false,
+      "created": "2022-01-16"
+    }
+  ],
+  "cards": [
+    {
+      "order": 0,
+      "boardId": 22526033962,
+      "listId": 83439259200,
+      "name": "buy milk",
+      "id": 55959733453,
+      "created": "2022-01-16",
+      "deadline": "2022-01-19",
+      "description": "",
+      "completed": false
+    }
+  ],
+  "lists": [
+    {
+      "boardId": 22526033962,
+      "name": "new list",
+      "order": 0,
+      "id": 83439259200,
+      "created": "2022-01-16"
+    }
+  ],
+  "users": []
+}

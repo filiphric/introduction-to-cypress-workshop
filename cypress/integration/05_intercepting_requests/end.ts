@@ -20,7 +20,7 @@ it('creating a new board', () => {
     .type('new garden')
 
   cy
-    .contains('Save')
+    .contains('Create board')
     .click()
 
   cy

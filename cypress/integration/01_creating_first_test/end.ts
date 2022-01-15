@@ -1,4 +1,4 @@
-it('Creating first test', () => {
+it.only('Creating first test', () => {
 
   cy
     .visit('/');
@@ -19,7 +19,7 @@ it('Checking a task', () => {
     .visit('/board/3404110071');
 
   cy
-    .get('[data-cy="task-done"]')
+    .get('[data-cy="card-checkbox"]')
     .check();
 
 });

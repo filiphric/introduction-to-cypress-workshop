@@ -12,29 +12,29 @@ it('creating new list', () => {
 
 });
 
-// #2: create a new task in your list
-it('creating new task', () => {
+// #2: create a new card in your list
+it('creating new card', () => {
 
 
 
 });
 
-// #3: tick the checkbox on your task
-it('checking task', () => {
+// #3: tick the checkbox on your card
+it('checking card', () => {
 
 
 
 });
 
-// #4: untick your checkbox on the task
-it('unchecking task', () => {
+// #4: untick your checkbox on the card
+it('unchecking card', () => {
 
 
 
 });
 
-// #5: write a test for adding a description to a task
-it('unchecking task', () => {
+// #5: write a test for adding a description to a card
+it('unchecking card', () => {
 
 
 

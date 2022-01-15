@@ -2,7 +2,7 @@ it('creating a new board', () => {
 
   cy
     .intercept('GET', '/api/boards', {
-      fixture: 'twoBoards'
+      fixture: 'threeBoards'
     })
     .as('boardList')
 
@@ -28,18 +28,14 @@ it('error message when creating a board', () => {
 
   cy
     .get('[data-cy=new-board-input]')
-    .type('nova zahrada')
+    .type('new garden')
 
   cy
-    .contains('Save')
+    .contains('Create board')
     .click()
 
   cy
-    .get('#errorMessage')
+    .get('[data-cy="notification-message"]')
     .should('be.visible')
-
-  cy
-    .get('#errorMessage')
-    .should('not.be.visible')
 
 })

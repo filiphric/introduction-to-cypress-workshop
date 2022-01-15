@@ -20,8 +20,8 @@ it('deleting a list', () => {
 
 })
 
-// #4: start the test with a single task, check it and then assert it is checked
-it('asseting che checked state', () => {
+// #4: start the test with a single card, check it and then assert it is checked
+it('asseting the checked state', () => {
 
 })
 
@@ -30,7 +30,7 @@ it('asserting list name', () => {
 
 })
 
-// #6: create a new task and assert its text
-it('assert text of created task', () => {
+// #6: create a new card and assert its text
+it('assert text of created card', () => {
 
 })
